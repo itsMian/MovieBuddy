@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20px"
+    android:orientation="vertical"
+    tools:context=".EditCinema">
+
+    <ImageButton
+        android:id="@+id/editC_backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60px"
+        android:text="Edit Cinema Record"
+        android:textSize="90px"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/editC_cid"
+                android:text="Id"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/editC_cid_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"
+                android:minWidth="250dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/editC_cname"
+                android:text="Name"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/editC_cname_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/editC_location"
+                android:text="Location"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/editC_location_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:text="Select movies showing at the cinema"
+        android:textSize="60px"/>
+
+    <ListView
+        android:id="@+id/editC_cbox_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px">
+
+        <Button
+            android:id="@+id/editCBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Item"/>
+
+        <Button
+            android:id="@+id/editC_cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/editC_viewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="View Records" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editC_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="60px" />
+
+</LinearLayout>

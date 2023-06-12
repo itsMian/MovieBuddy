@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewRecordsBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/list_poster"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:minWidth="250dp">
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/list_rdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewMDetailsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=">"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditMovie">
+
+    <ImageButton
+        android:id="@+id/edit_backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60px"
+        android:text="Edit a Movie Record"
+        android:textSize="90px"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="100px"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/edit_id"
+                android:text="Id"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/edit_id_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"
+                android:minWidth="250dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/edit_title"
+                android:text="Title"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/edit_title_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/edit_directors"
+                android:text="Directors"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/edit_directors_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/edit_casts"
+                android:text="Casts"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/edit_casts_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/edit_rdate"
+                android:text="Release Date"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/edit_rdate_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/edit_poster"
+                android:text="Poster"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/edit_poster_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="10"
+                android:textSize="60px"/>
+
+            <Button
+                android:id="@+id/edit_addPosterBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_span="20"
+                android:text="Add Poster"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="100px">
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Item"/>
+
+        <Button
+            android:id="@+id/edit_cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/edit_viewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="View Records" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edit_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="60px" />
+
+</LinearLayout>

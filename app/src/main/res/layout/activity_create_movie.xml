@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateMovie">
+
+    <TextView
+        android:id="@+id/add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60px"
+        android:text="Add a Movie Record"
+        android:textSize="90px"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="100px"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/id"
+                android:text="Id"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/id_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"
+                android:minWidth="250dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/title"
+                android:text="Title"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/title_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/directors"
+                android:text="Directors"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/directors_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/casts"
+                android:text="Casts"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/casts_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/rdate"
+                android:text="Release Date"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/rdate_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="30"
+                android:textSize="60px"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/poster"
+                android:text="Poster"
+                android:textSize="60px"/>
+
+            <EditText
+                android:id="@+id/poster_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="10"
+                android:textSize="60px"/>
+
+            <Button
+                android:id="@+id/addPosterBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_span="20"
+                android:text="Add Poster"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="100px">
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Item"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/viewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="View Records" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="60px" />
+
+</LinearLayout>

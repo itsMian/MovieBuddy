@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MovieBuddy</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="title_activity_cinema_page">CinemaPage</string>
+    <string name="title_activity_movie_page">MoviePage</string>
+</resources>

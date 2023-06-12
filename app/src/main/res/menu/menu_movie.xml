@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.moviebuddy.MoviePage">
+    <item
+        android:id="@+id/m_homeMenu"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/m_movieMenu"
+        android:orderInCategory="100"
+        android:title="Movies"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/m_cinemaMenu"
+        android:orderInCategory="100"
+        android:title="Cinemas"
+        app:showAsAction="ifRoom" />
+</menu>
